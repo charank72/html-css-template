@@ -246,4 +246,14 @@ footer h4{
     /* display: none; */
     margin-left: -130px;
   }
+  .section3 .col1,.section2-2 {
+    width: 100%;
+  }
+  .section3 .col1 img,.section2-2 img{
+    margin: auto;
+    width: 90%;
+  }
+  .section5 h3{
+    font-size: 2.1rem;
+  }
 }
