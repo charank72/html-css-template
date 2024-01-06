@@ -75,11 +75,10 @@ body{
 }
 .section1 .section1-2{
   font-size: 2.0rem;
-  font-family: 'Bitter', serif;
   color: #fff;
 }
 .section1-2 p{
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 .section1-2 p span{
   color: var(--primary);
@@ -250,8 +249,8 @@ footer h4{
     margin-left: -130px;
   }
   .log button:nth-child(1){
-    /* display: none; */
-    margin-left: -130px;
+    display: none;
+    
   }
   .section3 .col1,.section2-2 {
     width: 100%;
