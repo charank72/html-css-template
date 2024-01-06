@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+/* font-family: 'Bitter', serif; */
+*{
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+}
+:root{
+  --primary:#249e0b
+}
+.section1,.section2,.section3,.section4,.section5{
+  margin-bottom: 300px;
+}
+.col1{
+  margin-bottom: 200px;
+}
+body{
+  font-family: 'Bitter', serif;
+  margin: 0;
+  background-color: #131313;
+}
+.nav{
+  width: 100%;
+  position: sticky;
+  top:0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131313;
+}
+.nav .title h3{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.topic{
+  display: flex;
+  gap: 20px;
+}
+.topic a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  transition: all 0.5s;
+}
+.topic a:hover{
+  color: var(--primary);
+}
+.log{
+  display: flex;
+  gap: 10px;
+}
+.log button{
+  padding: 10px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.log button:hover{
+  color: #fff;
+  background-color: var(--primary);
+}
+.section1{
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  margin-bottom: 200px;
+}
+.section1 .section1-1{
+  background: linear-gradient(to bottom, #131313,rgb(60, 57, 57) 10%,rgb(88, 84, 84),#131313);
+}
+.section1 .section1-2{
+  font-size: 2.0rem;
+  font-family: 'Bitter', serif;
+  color: #fff;
+}
+.section1-2 p{
+  font-size: 20px;
+}
+.section1-2 p span{
+  color: var(--primary);
+}
+.section1-2 div{
+  width: 500px;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+  margin: auto;
+  
+}
+.section1-2 h1 span,.section2-1 h1 span,.section3 .col2 h1 span,.section5 h3 span,footer .col span{
+  padding: 5px;
+  background-color: var(--primary);
+}
+.section2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.section2-1{
+  padding: 20px;
+  font-size: 2rem;
+  color: #fff;
+}
+.section2 p{
+  font-size: 1.2rem;
+}
+.section3{
+  display: flex;
+  padding: 30px;
+  margin-bottom: 200px;
+}
+.section3 .col1,.section2-2 {
+ width: 700px;
+}
+.section3 .col1 img,.section2-2 img{
+  width: 600px;
+  object-position: center;
+  object-fit: contain;
+}
+.section3 .col2 h1,.section5 h3{
+  font-size: 3rem;
+}
+.section3 .col2 p{
+  font-size: 1.2rem;
+  width: 400px;
+  text-align: left;
+}
+.section4{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 400px 0 400px 0;
+}
+.section4 input,.section4 button{
+  height: 50px;
+  width: 150px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.section4 input{
+  width: 300px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(59, 51, 51);
+}
+.section4 button{
+  border: none;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+/* section5 */
+
+.section5 .col1{
+  text-align: center;
+}
+.section5 .col1 p{
+  margin: auto;
+  width: 400px;
+  font-size: 1.3rem;
+}
+.section2,.section3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* //cards */
+
+.section5 .cards{
+  display: grid;
+  margin: 2rem;
+  gap: 50px;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section5 .cards img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 7px solid var(--primary);
+}
+.section5 .card p{
+  width: 260px;
+  text-align: center;font-size: 1.2rem;
+}
+.section5 .card{
+  /* border: 1px solid #fff; */
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  background-color: #3d3131;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section5 .card a{
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 5px solid var(--primary);
+}
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .col h1{
+  font-size: 3rem;
+}
+footer .col h3{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer h4{
+  width: 300px;
+}
+@media screen and (max-width:900px) {
+  .section5 .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }footer h4{
+    width: 100%;
+  }.section1,.section2,.section3{
+    display: flex;
+    flex-direction: column;
+  }
+  .log button:nth-child(2){
+    display: none;
+    margin-left: -130px;
+  }
+  .log button:nth-child(1){
+    /* display: none; */
+    margin-left: -130px;
+  }
+}
