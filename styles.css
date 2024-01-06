@@ -90,7 +90,7 @@ body{
   margin: auto;
   
 }
-.section1-2 h1 span,.section2-1 h1 span,.section3 .col2 h1 span,.section5 h3 span,footer .col span{
+.section1-2 h1 span,.section2-1 h1 span,.section3 .col2 h1 span,.section5 h3 span{
   padding: 5px;
   background-color: var(--primary);
 }
@@ -211,6 +211,9 @@ footer{
 }
 footer .col h1{
   font-size: 3rem;
+}
+footer .col span{
+  color: var(--primary);
 }
 footer .col h3{
   display: flex;
